@@ -1,0 +1,26 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    100px
+  ); /* grid with 4 columns of width 100px*/
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px; /* space between items */
+}
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: chocolate; /* Changed to chocolate */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  cursor: pointer;
+}
+.revealed {
+  background-color: lime;
+}
+.hidden {
+  background-color: chocolate; /* Changed to chocolate */
+  color: chocolate;
+}
