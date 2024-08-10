@@ -31,6 +31,8 @@ shuffledLetters.forEach((letter) => {
 });
 
 const startButton = document.getElementById("startButton");
+startButton.style.padding = "1em";
+startButton.style.margin = "1em";
 let firstClick = null;
 let secondClick = null;
 let revealedCount = 0;
