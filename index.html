@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<!----- suggested improvements: add a timer ---->
+<!----- suggested improvements: add a timer and 
+after picking a new image, limit search for its pair to 2 attempts.
+2 attempts with no match constitutes 1 strike. 3 strikes = game over.
+---->
 
 <html>
 
@@ -11,22 +14,59 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script src="app.js" async defer></script>
+
+        <!-- google fonts  -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+            rel="stylesheet">
     </head>
 
     <body>
-        <pre>
-            About the game:
+        <div class="gameName shantell-sans-jog">
+            <h1>Jog Memory Game</h1>
+        </div>
+        <div class="intro roboto-medium-jog">
 
-            Don't blink. 
-            Click the start button to start the memory game.
-            4 pairs of images will be revealed for a short period of time.
-            Click a square to reveal the image.
-            When a paired match is selected, it stays revealed.
+            Welcome everyone to "Jog my Memory" game.<br><br>
 
-            WIN by matching all pairs. 
-        </pre>
+            Jog Memory Rules:<br>
+
+            1. Click the START button.<br>
+            2. Images will be revealed in a blip. ( Don't blink or you'll missed it.)<br><br>
+
+
+            Click and match 2 squares.<br>
+
+            WIN by matching all pairs.
+
+
+        </div>
+
+        </div>
         <button id="startButton">Start</button>
         <div class="grid" id="grid"></div>
+        <div class="parent">
+            <p class="child1">Count of paired matches:</p>
+            <p class="child2"></p>
+        </div>
+        <!-- images to match-->
+        <!-- <div class="givenImages">
+            <div><img src="./images/astronaut.jpg" alt="" id="boy" class="clickedImage"></div>
+            <div><img src="./images/dog.jpeg" alt="" id="dog" class="clickedImage"></div>
+            <div><img src="./images/donaldDuck.jpeg" alt="" id="duck" class="clickedImage"></div>
+            <div><img src="./images/owl.jpg" alt="" id="owl" class="clickedImage"></div>
+        </div> -->
+        <footer>
+            copyright 2024 All Rights Reserved.
+        </footer>
+
     </body>
 
 </html>
