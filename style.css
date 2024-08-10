@@ -23,6 +23,7 @@ body {
   align-items: center;
   font-size: 2rem;
   cursor: pointer;
+  pointer-events: auto; /*The pointer-events property in CSS controls how an element responds to mouse and touch events*/
 }
 .revealed {
   background-color: lime;
