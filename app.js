@@ -1,11 +1,11 @@
 const owl =
-  "/rtt31/assignments/wip/ALAB316.2.1_InteractingwiththeBrowser/images/owl.jpg";
+  "/rtt31/assignments/done/ALAB316.2.1_InteractingwiththeBrowser/images/owl.jpg";
 const boy =
-  "/rtt31/assignments/wip/ALAB316.2.1_InteractingwiththeBrowser/images/astronaut.jpg";
+  "/rtt31/assignments/done/ALAB316.2.1_InteractingwiththeBrowser/images/astronaut.jpg";
 const duck =
-  "/rtt31/assignments/wip/ALAB316.2.1_InteractingwiththeBrowser/images/donaldduck.jpeg";
+  "/rtt31/assignments/done/ALAB316.2.1_InteractingwiththeBrowser/images/donaldduck.jpeg";
 const dog =
-  "/rtt31/assignments/wip/ALAB316.2.1_InteractingwiththeBrowser/images/dog.jpeg";
+  "/rtt31/assignments/done/ALAB316.2.1_InteractingwiththeBrowser/images/dog.jpeg";
 const letters = [boy, boy, owl, owl, duck, duck, dog, dog];
 
 function shuffle(array) {
