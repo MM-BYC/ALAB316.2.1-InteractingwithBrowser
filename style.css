@@ -1,15 +1,22 @@
+body {
+  display: flex;
+  text-align: center;
+  align-items: center; /* this will center horizontally the grid.*/
+  flex-direction: column; /* moves items in a column direction*/
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(
     4,
-    100px
+    200px
   ); /* grid with 4 columns of width 100px*/
-  grid-template-rows: repeat(2, 100px);
+  grid-template-rows: repeat(2, 200px);
   gap: 10px; /* space between items */
 }
 .square {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   background-color: chocolate; /* Changed to chocolate */
   display: flex;
   justify-content: center;

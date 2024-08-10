@@ -1,6 +1,6 @@
 const owl = "./images/owl.jpg";
 const boy = "./images/astronaut.jpg";
-const duck = "./images/donaldduck.jpeg";
+const duck = "./images/donaldDuck.jpeg";
 const dog = "./images/dog.jpeg";
 const letters = [boy, boy, owl, owl, duck, duck, dog, dog];
 
@@ -49,7 +49,7 @@ function checkCompletion() {
 }
 
 startButton.addEventListener("click", () => {
-  if (startButton.textContent === "Reset") {
+  if (startButton.textContent === "RESET") {
     const squares = document.querySelectorAll(".square");
     squares.forEach((square) => {
       square.classList.add("hidden");
@@ -75,7 +75,7 @@ startButton.addEventListener("click", () => {
       // Highlighted: Hide the image after the timeout
       square.querySelector("img").style.display = "none"; // <-- Added line to Not display the image
 
-      square.addEventListener("click", handleSquareClick); // <-- important: Rreassign the click event listener
+      square.addEventListener("click", handleSquareClick); // <-- important: Re-assign the click event listener from start button to listen to square clicks.
     }, 1000);
   });
 });
