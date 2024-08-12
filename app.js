@@ -25,28 +25,33 @@ function shuffle(array) {
 }
 
 const grid = document.getElementById("grid");
-const shuffledLetters = shuffle(letters); // this shuffles the array.
 
-shuffledLetters.forEach((letter, index) => {
-  const div = document.createElement("div");
-  div.classList.add("square", "hidden");
+function resetOrder() {
+  const shuffledLetters = shuffle(letters); // this shuffles the array.
 
-  /* Store which square INDEX and IMAGE was clicked.
+  shuffledLetters.forEach((letter, index) => {
+    const div = document.createElement("div");
+    div.classList.add("square", "hidden");
+
+    /* Store which square INDEX and IMAGE was clicked.
   For tracking purposes we use dataset.image, and dataset.index 
   */
-  div.dataset.img = letter;
-  div.dataset.index = index;
+    div.dataset.img = letter;
+    div.dataset.index = index;
 
-  // Highlighted: Create an img element and set its src attribute to the image path
-  const img = document.createElement("img"); // <-- Added line
-  img.src = letter; // <-- Added line
-  img.style.width = "100%"; // <-- Added line: Adjust image width
-  img.style.height = "100%"; // <-- Added line: Adjust image height
-  img.style.display = "none"; // <-- Added line: Initially hide the image
+    // Highlighted: Create an img element and set its src attribute to the image path
+    const img = document.createElement("img"); // <-- Added line
+    img.src = letter; // <-- Added line
+    img.style.width = "100%"; // <-- Added line: Adjust image width
+    img.style.height = "100%"; // <-- Added line: Adjust image height
+    img.style.display = "none"; // <-- Added line: Initially hide the image
 
-  div.appendChild(img); // <-- Added line: Append the img element to the div
-  grid.appendChild(div); // append to the grid
-});
+    div.appendChild(img); // <-- Added line: Append the img element to the div
+    grid.appendChild(div); // append to the grid
+  });
+}
+
+resetOrder();
 
 const startButton = document.getElementById("startButton");
 startButton.style.padding = "1em";
@@ -87,6 +92,8 @@ startButton.addEventListener("click", () => {
     revealedCount = 0; // Reset the revealed count
     return;
   }
+  /* shuffle the images */
+  shuffle(letters);
 
   const squares = document.querySelectorAll(".square");
   squares.forEach((square) => {
