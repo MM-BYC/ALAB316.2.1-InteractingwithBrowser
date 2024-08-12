@@ -7,7 +7,7 @@
 successfulMatchCount = 0;
 const owl = "./images/owl.jpg";
 const boy = "./images/astronaut.jpg";
-const duck = "./images/duck.jpeg";
+const duck = "./images/donaldDuck.jpeg";
 const dog = "./images/dog.jpeg";
 const letters = [boy, boy, owl, owl, duck, duck, dog, dog];
 
