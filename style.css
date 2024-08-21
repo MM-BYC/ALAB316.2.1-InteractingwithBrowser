@@ -98,3 +98,18 @@ body {
   display: flex;
   gap: 30px;
 } */
+
+.rights {
+  /* border: 5px solid red; */
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.copyright {
+  font-size: 1.5em;
+  color: black;
+}
+.powered {
+  font-size: 1.5em;
+  color: black;
+}
