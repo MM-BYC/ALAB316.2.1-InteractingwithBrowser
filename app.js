@@ -11,6 +11,11 @@ const duck = "./images/donaldDuck.jpeg";
 const dog = "./images/dog.jpeg";
 const letters = [boy, boy, owl, owl, duck, duck, dog, dog];
 
+/* pass the year */
+const year = new Date().getFullYear();
+const copyright = document.querySelector(".copyright");
+copyright.textContent = `\u00A9 ${year} All Rights Reserved.`;
+
 /* 
     Resets tracker 
 */

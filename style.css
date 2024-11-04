@@ -101,7 +101,7 @@ body {
 
 .rights {
   /* border: 5px solid red; */
-  width: 80%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
 }
