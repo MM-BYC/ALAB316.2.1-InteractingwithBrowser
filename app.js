@@ -15,6 +15,8 @@ const letters = [boy, boy, owl, owl, duck, duck, dog, dog];
 const year = new Date().getFullYear();
 const copyright = document.querySelector(".copyright");
 copyright.textContent = `\u00A9 ${year} All Rights Reserved.`;
+const poweredBy = document.querySelector(".poweredBy");
+poweredBy.textContent = "powered by BYC";
 
 /* 
     Resets tracker 
