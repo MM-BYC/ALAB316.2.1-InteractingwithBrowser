@@ -101,9 +101,11 @@ body {
 
 .rights {
   /* border: 5px solid red; */
-  width: 90%;
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, auto);
 }
 .copyright {
   /* font-size: 1.5em; */
