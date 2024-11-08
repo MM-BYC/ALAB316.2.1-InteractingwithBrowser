@@ -101,7 +101,7 @@ body {
 
 .rights {
   /* border: 5px solid red; */
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
   display: grid;
   place-items: center;
