@@ -63,9 +63,10 @@ resetOrder();
 const startButton = document.getElementById("startButton");
 startButton.style.padding = "1em";
 startButton.style.margin = "1em";
-startButton.style.fontSize = "1.5em";
+startButton.style.fontSize = "1em";
 startButton.style.borderRadius = "10px";
 startButton.style.cursor = "pointer"; // cursor changes to pointer when hovered over button
+startButton.style.width = "5em";
 let firstClick = null;
 let secondClick = null;
 let revealedCount = 0;

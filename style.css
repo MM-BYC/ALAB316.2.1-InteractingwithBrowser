@@ -41,14 +41,14 @@ body {
   display: grid;
   grid-template-columns: repeat(
     4,
-    200px
+    auto
   ); /* grid with 4 columns of width 100px*/
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: repeat(2, auto);
   gap: 10px; /* space between images */
 }
 .square {
-  width: 200px;
-  height: 200px;
+  width: 4em;
+  height: 4em;
   background-color: chocolate; /* Changed to chocolate */
   display: flex;
   justify-content: center;
@@ -89,8 +89,8 @@ body {
 
 .clickedImage {
   border: 5px solid blue;
-  height: 100px;
-  width: 100px;
+  height: 3em;
+  width: 3em;
   border-radius: 50%;
 }
 
